@@ -11,9 +11,32 @@
 <body style="background-color: cadetblue;">
     <h1>Test Bot</h1>
 	
+	<iframe frameborder="0" style="height:500px;width:99%;border:none;" src='https://forms.zohopublic.com/demo1crmoz/form/NewLeadFrom/formperma/Ds1s5jzl6n-OG6Mg7ZkXLkx5y5pyJVwRSjDGTb7HRSo'></iframe>
 	
-	
-	<script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "a8c15f86da6e0d111db7d15b060ae5382bd0e1fb5b2d43c8529593216fc52284", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
+	<script type="text/javascript">
+	var $zoho=$zoho || {};
+	$zoho.salesiq = $zoho.salesiq || 
+	{
+		widgetcode:"a8c15f86da6e0d111db7d15b060ae5382bd0e1fb5b2d43c8529593216fc52284", 
+		values:{},
+		ready:function(){
+
+			console.log("Visitor: ", $zoho.salesiq.visitor);
+
+			$zoho.salesiq.visitor.getIP(function(ipAddress) {
+    			console.log("Ip Address: ", ipAddress);
+			});
+		}
+	};
+	var d=document;
+	s=d.createElement("script");
+	s.type="text/javascript";
+	s.id="zsiqscript";
+	s.defer=true;
+	s.src="https://salesiq.zoho.com/widget";
+	t=d.getElementsByTagName("script")[0];
+	t.parentNode.insertBefore(s,t);
+	</script>
 </body>
 
 </html>
