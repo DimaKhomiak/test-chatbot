@@ -22,10 +22,10 @@
 		ready:function(){
 
 			console.log("Visitor: ", $zoho.salesiq.visitor);
+			
+			var geoDetails = $zoho.salesiq.visitor.getGeoDetails();
 
-			$zoho.salesiq.visitor.getIP(function(ipAddress) {
-    			console.log("Ip Address: ", ipAddress);
-			});
+			console.log("geoDetails: ", geoDetails);
 		}
 	};
 	var d=document;
