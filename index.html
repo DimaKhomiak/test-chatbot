@@ -29,6 +29,10 @@ $zoho.salesiq = $zoho.salesiq ||
 		var geoDetails = $zoho.salesiq.visitor.getGeoDetails();
 
 		console.log("geoDetails: ", geoDetails);
+		
+		var timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+		console.log("Time Zone: " + timeZone);
+		
 
 	}};
 	var d=document;
